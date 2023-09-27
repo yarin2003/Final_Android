@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="Movies"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="course.hackeru.final_android_project.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_TVsFragment"
+            app:destination="@id/TVsFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="course.hackeru.final_android_project.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="course.hackeru.final_android_project.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="course.hackeru.final_android_project.ui.movies.MoviesFragment"
+        android:label="Movies">
+        <action
+            android:id="@+id/action_moviesFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TVsFragment"
+        android:name="course.hackeru.final_android_project.ui.tvs.TVsFragment"
+        android:label="TV"
+        tools:layout="@layout/fragment_tvs">
+        <action
+            android:id="@+id/action_TVsFragment_to_tvDetailsFragment"
+            app:destination="@id/tvDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="course.hackeru.final_android_project.ui.movieDetails.MovieDetailsFragment"
+        android:label="Movie Details"
+        tools:layout="@layout/fragment_movie_details" />
+    <fragment
+        android:id="@+id/tvDetailsFragment"
+        android:name="course.hackeru.final_android_project.ui.tvDetails.TvDetailsFragment"
+        android:label="TV Details"
+        tools:layout="@layout/fragment_tv_details" />
+</navigation>

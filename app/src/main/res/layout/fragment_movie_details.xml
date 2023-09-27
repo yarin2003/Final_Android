@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movieTitle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.movieDetails.MovieDetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/movieName"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="title" />
+
+        <TextView
+            android:id="@+id/movieOverviewText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            tools:text="overview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+        <TextView
+            android:id="@+id/movieOverview"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/overview"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+        <TextView
+            android:id="@+id/movieGenres"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genres"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/movieOverview"
+            app:layout_constraintStart_toStartOf="@+id/movieOverview"
+            app:layout_constraintTop_toTopOf="@+id/movieGenresText" />
+
+        <TextView
+            android:id="@+id/movieGenresText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:text="movieGenres"
+            app:layout_constraintEnd_toEndOf="@+id/movieOverviewText"
+            app:layout_constraintStart_toStartOf="@+id/movieOverviewText"
+            app:layout_constraintTop_toBottomOf="@+id/movieOverviewText" />
+
+        <TextView
+            android:id="@+id/movieLang"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/movieGenres"
+            app:layout_constraintStart_toStartOf="@+id/movieGenres"
+            app:layout_constraintTop_toTopOf="@+id/movieLangText" />
+
+        <TextView
+            android:id="@+id/movieLangText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:text="language"
+            app:layout_constraintEnd_toEndOf="@+id/movieGenresText"
+            app:layout_constraintStart_toStartOf="@+id/movieGenresText"
+            app:layout_constraintTop_toBottomOf="@+id/movieGenresText" />
+
+        <TextView
+            android:id="@+id/movieDate"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/release_date"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/movieLang"
+            app:layout_constraintStart_toStartOf="@+id/movieLang"
+            app:layout_constraintTop_toTopOf="@+id/movieDateText" />
+
+        <TextView
+            android:id="@+id/movieDateText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:text="date"
+            app:layout_constraintEnd_toEndOf="@+id/movieLangText"
+            app:layout_constraintStart_toStartOf="@+id/movieLangText"
+            app:layout_constraintTop_toBottomOf="@+id/movieLangText" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
