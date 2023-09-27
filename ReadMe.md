@@ -45,10 +45,11 @@ Once the app is up and running, you can:
 ### <ins>Screenshots</ins>
 
 <img src="/screenshots/home.png" width="300" height="600"/>
-<img src="/screenshots/movie_details.png" width="300" height="600"/>
 <img src="/screenshots/movies.png" width="300" height="600"/>
-<img src="/screenshots/tv_details.png" width="300" height="600"/>
+<img src="/screenshots/movie_details.png" width="300" height="600"/>
 <img src="/screenshots/tvs.png" width="300" height="600"/>
+<img src="/screenshots/tv_details.png" width="300" height="600"/>
+
 
 
 
