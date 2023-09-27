@@ -43,12 +43,14 @@ Once the app is up and running, you can:
 - Getting details on each movie/tv by clicking the item in the list.
 
 ### <ins>Screenshots</ins>
-| [![Screen1](https://github.com/yarin2003/Final_Android/screenshots/home.png)]() | [![Screen2](https://raw.githubusercontent.com/yarin2003/Final_Android/main/screenshots/movies.png)]() | [![Screen3](C:\Hackeru_FullStack\assignments\android\final_android_project\app\src\main\res\drawable\movie_details.png)]() | [![Screen4](C:\Hackeru_FullStack\assignments\android\final_android_project\app\src\main\res\drawable\tvs.png)]() | [![Screen5](C:\Hackeru_FullStack\assignments\android\final_android_project\app\src\main\res\drawable\tv_details.png)]() |
-|:-------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|
+
+<img src="/screenshots/home.png" width="300" height="600"/>
+<img src="/screenshots/movie_details.png" width="300" height="600"/>
+<img src="/screenshots/movies.png" width="300" height="600"/>
+<img src="/screenshots/tv_details.png" width="300" height="600"/>
+<img src="/screenshots/tvs.png" width="300" height="600"/>
 
 
-
-//https://github.com/yarin2003/Final_Android.git
 
 
 
